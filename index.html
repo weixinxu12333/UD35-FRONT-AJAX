@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/codigo.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>API Rest countries</h1>
+        <br>
+        <div class="row">
+            <!-- Column 1 -->
+            <div class="col">
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">All</span>
+                    </div>
+                    <input type="text" class="form-control" disabled>
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getAll">Enviar</button>
+                    </div>
+                </div>
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Name</span>
+                    </div>
+                    <input type="text" class="form-control" id="tName">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getName">Enviar</button>
+                    </div>
+                </div>
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Full Name</span>
+                    </div>
+                    <input type="text" class="form-control" id="tFullName">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getFullName">Enviar</button>
+                    </div>
+                </div>
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Code</span>
+                    </div>
+                    <input type="text" class="form-control" id="tCode">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getCode">Enviar</button>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">List of code</span>
+                    </div>
+                    <input type="text" class="form-control" id="tCode1">
+                    <input type="text" class="form-control" id="tCode2">
+                    <input type="text" class="form-control" id="tCode3">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getListCode">Enviar</button>
+                    </div>
+                </div>
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Currency</span>
+                    </div>
+                    <input type="text" class="form-control" id="tCurr">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getCurrency">Enviar</button>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Language</span>
+                    </div>
+                    <input type="text" class="form-control" id="tLang">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getLang">Enviar</button>
+                    </div>
+                </div>
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Capital city</span>
+                    </div>
+                    <input type="text" class="form-control" id="tCap">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getCapCity">Enviar</button>
+                    </div>
+                </div>
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Calling code</span>
+                    </div>
+                    <input type="text" class="form-control" id="tCall">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getCallCode">Enviar</button>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Region</span>
+                    </div>
+                    <input type="text" class="form-control" id="tReg">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getRegion">Enviar</button>
+                    </div>
+                </div>
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Region Bloc</span>
+                    </div>
+                    <input type="text" class="form-control" id="tRegBloc">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getRegBloc">Enviar</button>
+                    </div>
+                </div>
+                <!-- Endpoint -->
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">Service</span>
+                    </div>
+                    <input type="text" class="form-control" id="tSer">
+                    <input type="text" class="form-control" id="tSer1">
+                    <input type="text" class="form-control" id="tSer2">
+                    <input type="text" class="form-control" id="tSer3">
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="button" id="getServices">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Column 2 -->
+            <div class="col">
+                <pre id="res">
+
+                </pre>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
